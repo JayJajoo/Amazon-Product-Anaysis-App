@@ -1,0 +1,50 @@
+.card{
+    transition: 1s ease-in;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: 1rem 1rem;
+    border: 2px solid wheat;
+    display: flex;
+    justify-content: space-between;
+}
+.card_left{
+    flex: 80%;
+}
+
+.sep{
+    margin-left: 1rem;
+    width: 5px;
+    border-radius: 2px;
+    height: inherit;
+    background-color: rgb(0, 0, 0);
+}
+
+.card_right{
+    margin-left: 3vw;
+    border-left: 5px sloid blue;
+    flex: 1%;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: black;
+}
+
+.rating{
+    color: gold;
+    font-size: 1.2rem;
+}
+
+.body{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.review{
+    height: 100%;
+    width: 100%;
+    font-size: 1.5rem;
+    color: rgb(213, 191, 210);
+}

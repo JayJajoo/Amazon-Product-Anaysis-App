@@ -1,0 +1,65 @@
+.dashboard{
+    top: 2vh;
+    left: 3px;
+    width: 96.2vw;
+    min-height: 90%;
+    position:fixed;
+    background:transparent;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 3px solid rgb(30, 250, 140);
+    border-radius: 3px ;
+    padding: 1rem 1rem;
+}
+.head_pannel{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35%;
+}
+.pannel_title{
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    color: rgb(75, 237, 237);
+}
+.close_btn{
+    background: transparent;
+    border: 2px solid rgb(192, 11, 11);
+    padding: 0.5rem 5rem;
+    border-radius: 6px;
+    font-size: larger;
+    color: rgb(219, 196, 199);
+}
+
+.data{
+    padding: 10% 10%;
+    display: flex;
+    gap: 5vw;
+    width: 60%;
+    margin-top: 7%;
+    line-height: 2rem;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-weight: bolder;
+    box-shadow: 0 8px 32px 0 rgba(255,255,255,0.16);
+}
+
+.data_details{
+    color: greenyellow;
+}
+
+.graph_data{
+    padding: 3rem 1rem;
+    background-color: rgb(164, 234, 239);
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 60%;
+    max-width: max-content;
+    margin-top: 8vh;
+}
+
+.graph_details{
+    margin-left: 3rem;
+}

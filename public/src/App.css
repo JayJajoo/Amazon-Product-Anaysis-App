@@ -1,0 +1,11 @@
+*{
+    margin: 0 0;
+    font-family: Poppins;
+    color: azure;
+}
+.App{
+    padding-bottom: 2rem;
+    min-height: 100vh;
+    max-height: max-content;
+    background-color: black;
+}

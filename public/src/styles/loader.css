@@ -1,0 +1,30 @@
+.loader{
+    position: fixed;
+    padding: 2rem 3rem;
+    width: max-content;
+    height: max-content;
+    top: 25vh;
+    left: 40vw;
+    border: 5px solid rgb(206, 84, 208);
+    border-radius: 6px;
+    background-color:rgb(255, 255, 255);
+}
+.loader_animate{
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;   
+}
+.loader_gif{
+    background-color: aqua;
+    mix-blend-mode:multiply;
+}
+.loader_tag{
+    color: cadetblue;
+    width: max-content;
+    height: max-content;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
