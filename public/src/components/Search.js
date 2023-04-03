@@ -19,7 +19,7 @@ function Search({setReportGeneration}) {
         setIsReportGenerated(false)
         setProcess("Generating Report ...")
         setLoading(true)
-        const data=await axios.post("http://localhost:5000/api/generateReport")
+        const data=await axios.get("http://localhost:5000/api/generateReport")
         console.log(data.data)
         setLoading(false)
         setIsReportGenerated(true)

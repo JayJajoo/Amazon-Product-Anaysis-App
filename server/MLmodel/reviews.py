@@ -45,12 +45,13 @@ class Reviews:
     def save(self,results):
         res=[]
         with open('C:/Users/LEGION/Desktop/sin_project/server/OutputData/reviews.json','w') as f:
+            print(self.asin)
             for pages in results:
                 for reviews in pages:
                     res.append(reviews)
             json.dump(res,f)
 if __name__=="__main__":
-    amz = Reviews(sys.argv[1])#"B0BP1PN7DX"
+    amz = Reviews(str(sys.argv[1]))#"B0BP1PN7DX"
     results=[]
     #amz.parseImage()
     for i in range(10):
@@ -58,4 +59,3 @@ if __name__=="__main__":
         if reviews is not False:
             results.append(amz.parse(reviews))
     amz.save(results)
-    

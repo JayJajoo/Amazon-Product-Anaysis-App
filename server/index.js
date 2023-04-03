@@ -41,27 +41,22 @@ router.post("/getReviews",async (req,res)=>{
         if(err){
           console.log(err)
         }
+        console.log(result)
       })
     res.send("Data extraction successful")
 })
 
-router.post("/generateReport",async (req,res)=>{
+router.get("/generateReport",async (req,res)=>{
   await PythonShell.run("./MLmodel/predictor.py",(err,result)=>{
     if(err){
       console.log(err)
     }
     console.log(result)
   })
-  // console.log("generate report")
-  // const pythonProcess = spawn('python', ["./MLmodel/predictor.py"]);
-  // setTimeout(() => {
-  //   pythonProcess.kill();
-  // }, 60000);
   res.send("Report Generated")
 })
 
 router.post("/getReport",async (req,res)=>{
-  //console.log("get report")
   const data=await require("./OutputData/preditions.json");
   res.send(data);
 })
@@ -69,7 +64,7 @@ router.post("/getReport",async (req,res)=>{
 router.post("/getSummary",async(req,res)=>{
   console.log("OpenAi API called")
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   
   const reviews=require("./OutputData/preditions.json")
