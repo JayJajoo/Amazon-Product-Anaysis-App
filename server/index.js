@@ -64,7 +64,7 @@ router.post("/getReport",async (req,res)=>{
 router.post("/getSummary",async(req,res)=>{
   console.log("OpenAi API called")
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "",
   });
   
   const reviews=require("./OutputData/preditions.json")
